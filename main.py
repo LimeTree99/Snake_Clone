@@ -1,7 +1,11 @@
 import pygame
 from random import randint
-from pyhelp import colour
 import pygame_window
+
+class colour:
+    red = (255,0,0)
+    black = (0,0,0)
+    white = (255,255,255)
 
 class Score:
     def __init__(self, display, position, old_scores):
@@ -98,7 +102,7 @@ class Grid:
 
 class Window(pygame_window.main):
     def __init__(self):
-        pygame_window.main.__init__(self, 800, 600, 'RTS')
+        pygame_window.main.__init__(self, 800, 600, 'SNAKE!')
         self.background_colour = colour.black
         self.framerate = 60
         
